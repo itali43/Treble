@@ -9,9 +9,11 @@
 /* Begin PBXBuildFile section */
 		4F07C20B2122C74F00E29175 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F07C20A2122C74F00E29175 /* AppDelegate.swift */; };
 		4F07C20D2122C75000E29175 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4F07C20C2122C75000E29175 /* Assets.xcassets */; };
-		4F07C2102122C75000E29175 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4F07C20E2122C75000E29175 /* MainMenu.xib */; };
 		4F07C21C2122C75000E29175 /* GrandComposerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F07C21B2122C75000E29175 /* GrandComposerTests.swift */; };
 		4F07C2272122C75000E29175 /* GrandComposerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F07C2262122C75000E29175 /* GrandComposerUITests.swift */; };
+		4F07C2352122CC2E00E29175 /* Music.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F07C2342122CC2E00E29175 /* Music.swift */; };
+		4F07C2372122D17900E29175 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4F07C2362122D17900E29175 /* MainMenu.xib */; };
+		4F07C2392122D41C00E29175 /* NewWorldOne.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4F07C2382122D41C00E29175 /* NewWorldOne.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,7 +37,6 @@
 		4F07C2072122C74F00E29175 /* GrandComposer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GrandComposer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4F07C20A2122C74F00E29175 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4F07C20C2122C75000E29175 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		4F07C20F2122C75000E29175 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		4F07C2112122C75000E29175 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4F07C2122122C75000E29175 /* GrandComposer.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = GrandComposer.entitlements; sourceTree = "<group>"; };
 		4F07C2172122C75000E29175 /* GrandComposerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GrandComposerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,6 +45,9 @@
 		4F07C2222122C75000E29175 /* GrandComposerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GrandComposerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4F07C2262122C75000E29175 /* GrandComposerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GrandComposerUITests.swift; sourceTree = "<group>"; };
 		4F07C2282122C75000E29175 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4F07C2342122CC2E00E29175 /* Music.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Music.swift; sourceTree = "<group>"; };
+		4F07C2362122D17900E29175 /* MainMenu.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainMenu.xib; sourceTree = "<group>"; };
+		4F07C2382122D41C00E29175 /* NewWorldOne.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = NewWorldOne.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,8 +99,10 @@
 			isa = PBXGroup;
 			children = (
 				4F07C20A2122C74F00E29175 /* AppDelegate.swift */,
+				4F07C2342122CC2E00E29175 /* Music.swift */,
+				4F07C2382122D41C00E29175 /* NewWorldOne.mp3 */,
 				4F07C20C2122C75000E29175 /* Assets.xcassets */,
-				4F07C20E2122C75000E29175 /* MainMenu.xib */,
+				4F07C2362122D17900E29175 /* MainMenu.xib */,
 				4F07C2112122C75000E29175 /* Info.plist */,
 				4F07C2122122C75000E29175 /* GrandComposer.entitlements */,
 			);
@@ -225,8 +231,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4F07C2392122D41C00E29175 /* NewWorldOne.mp3 in Resources */,
 				4F07C20D2122C75000E29175 /* Assets.xcassets in Resources */,
-				4F07C2102122C75000E29175 /* MainMenu.xib in Resources */,
+				4F07C2372122D17900E29175 /* MainMenu.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -252,6 +259,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4F07C20B2122C74F00E29175 /* AppDelegate.swift in Sources */,
+				4F07C2352122CC2E00E29175 /* Music.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -285,17 +293,6 @@
 			targetProxy = 4F07C2232122C75000E29175 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		4F07C20E2122C75000E29175 /* MainMenu.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				4F07C20F2122C75000E29175 /* Base */,
-			);
-			name = MainMenu.xib;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		4F07C2292122C75000E29175 /* Debug */ = {
