@@ -31,7 +31,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
             button.image = #imageLiteral(resourceName: "trebSmall")
             button.target = self
             button.action = #selector(play(sender:))
-            button.sendAction(on: [.leftMouseUp, .rightMouseUp])
+            button.sendAction(on: [.leftMouseUp, .rightMouseUp, .rightMouseDragged])
 
 
             
@@ -68,11 +68,19 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         if event.type == NSEvent.EventType.rightMouseUp {
             print("Right click")
             stopSound(file: "NewWorldOne", ext: "mp3")
-        } else {
-            print("Left click")
-            playSound(file: "NewWorldOne", ext: "mp3")
+        } else if event.type == NSEvent.EventType.rightMouseDragged {
+            print("right mouse drag click")
+            stopSound(file: "NewWorldOne", ext: "mp3")
+            print("exiting")
+//            NSApplication.terminate()
+            NSApp.terminate(self)
+        }  else {
+    print("Left click")
+    playSound(file: "NewWorldOne", ext: "mp3")
+    
+    }
 
-        }
+        
         print("hi")
     }
 
